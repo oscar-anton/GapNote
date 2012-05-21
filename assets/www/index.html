@@ -1,0 +1,140 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>GapNote</title> 	
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.1.0.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" /> 
+	<link rel="stylesheet" href="css/jquery.mobile.theme-1.1.0.min.css" />
+	<link rel="stylesheet" href="css/gapnote.css" />
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery.mobile-1.1.0.min.js"></script>
+	<script src="js/cordova-1.7.0.js"></script>
+	<script src="js/gapnote.js"></script>
+	
+</head> 
+
+<body> 
+	<div data-role="page" id="nueva">	
+		<header data-role="header" data-position="fixed">
+			<h1>Nueva Nota</h1>
+		</header><!-- /header -->
+	
+		<div data-role="content">
+			<form id="frmNueva" name="frmNueva">
+				<div data-role="fieldcontain" >
+					<input type="text" name="titulo" id="titulo" value="" placeholder="Titulo de la nota"/>
+				</div>			
+				<div data-role="fieldcontain">
+					<input type="text" name="fecha" id="fecha" value="" placeholder="Fecha de la nota"/>
+				</div>
+
+				<div data-role="fieldcontain">
+					<textarea id="descripcion" name="descripcion" placeholder="Descripción de la nota...."></textarea>
+				</div>		
+				<div data-role="fieldcontain">
+					<a href="javascript:void(0)" id="sacar-foto" data-role="button" data-icon="gear" data-iconpos="right" data-theme="e">Sacar foto</a>
+				</div>
+				<div data-role="fieldcontain">
+					<a href="javascript:void(0)" id="crear" data-role="button" data-icon="check" data-iconpos="right" data-theme="a">Crear Nota</a>
+				</div>	
+				
+				<div id="foto"></div>			
+								
+			</form>	
+		</div><!-- /content -->
+	
+		<footer data-role="footer"  data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#nueva" class="ui-btn-active ui-state-persist" data-iconpos="top" data-icon="plus">Nueva</a></li>
+					<li><a href="#listado" data-iconpos="top"  data-icon="grid">Listado</a></li>
+					<li><a href="#opciones" data-iconpos="top"  data-icon="gear">Opciones</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</footer><!-- /footer -->
+	</div><!-- /page -->
+	
+	
+	<div data-role="page" id="ver">	
+		<header data-role="header" data-position="fixed">
+			<h1>Ver Nota</h1>
+		</header><!-- /header -->
+	
+		<div data-role="content">
+				<h2 id="titulo-val" class="field">	
+				Titulo de prueba				
+				</h2>			
+				<p id="fecha-val" class="field">
+				Fecha de prueba					
+				</p>			
+				<div id="descripcion-val" class="field">
+				Descripción de prueba					
+				</div>			
+				<div id="foto-val">					
+				</div>											
+		</div><!-- /content -->
+		
+	
+		<footer data-role="footer"  data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#nueva" data-iconpos="top" data-icon="plus">Nueva</a></li>
+					<li><a href="#listado" data-iconpos="top"  data-icon="grid">Listado</a></li>
+					<li><a href="#opciones" data-iconpos="top"  data-icon="gear">Opciones</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</footer><!-- /footer -->
+	</div><!-- /page -->	
+	
+	<div data-role="page" id="listado">	
+		<header data-role="header" data-position="fixed">
+			<h1>Listado de Notas</h1>
+		</header><!-- /header -->
+	
+		<div data-role="content">	
+			<ul id="listado-notas" data-role="listview" data-theme="e">
+			</ul>
+		</div><!-- /content -->
+	
+		<footer data-role="footer"  data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#nueva" data-iconpos="top" data-icon="plus">Nueva</a></li>
+					<li><a href="#listado"  class="ui-btn-active ui-state-persist" data-iconpos="top"  data-icon="grid">Listado</a></li>
+					<li><a href="#opciones" data-iconpos="top"  data-icon="gear">Opciones</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</footer><!-- /footer -->
+	</div><!-- /page -->	
+	
+	<div data-role="page" id="opciones">	
+		<header data-role="header" data-position="fixed">
+			<h1>Opciones</h1>
+		</header><!-- /header -->
+	
+		<div data-role="content">	
+			<div data-role="fieldcontain">
+			   <select name="transition" id="transition" data-theme="e">
+			      <option value="none">Sin transiciones</option>
+			      <option value="fade">Fade</option>
+			      <option value="slide">Slide</option>
+			      <option value="turn">Turn</option>
+			      <option value="flip">Flip</option>
+			   </select>
+			</div>	
+		</div><!-- /content -->
+	
+		<footer data-role="footer"  data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#nueva" data-iconpos="top" data-icon="plus">Nueva</a></li>
+					<li><a href="#listado" data-iconpos="top"  data-icon="grid">Listado</a></li>
+					<li><a href="#opciones" class="ui-btn-active ui-state-persist" data-iconpos="top"  data-icon="gear">Opciones</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</footer><!-- /footer -->
+	</div><!-- /page -->		
+</body>
+</html>

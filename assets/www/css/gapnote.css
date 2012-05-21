@@ -1,0 +1,96 @@
+#intro{
+	background-image: url(../img/splash.jpg) !important;
+	background-size:320px 480px !important;
+	background-position:center center !important;
+	background-color:#000 !important;
+	background-repeat:no-repeat !important;	
+}
+
+
+.ui-page{
+	background: url(../img/bg.jpg) !important;
+	
+	background-size:320px 480px !important;
+}
+
+
+header{
+	border:none !important;
+	background: -webkit-linear-gradient(#3C3C3C,#333) !important;	
+	box-shadow:0px 0px 20px #000;
+}
+
+header h1{
+
+		background-size:40px 40px !important;
+	
+		font-family:Arial,sans-serif;
+		margin:10px !important;
+		font-size:35px !important;
+		color:#e1bb81; 
+		text-shadow: 1px 1px 1px #684925;
+	
+}
+
+#nueva header h1{
+		background-image: url(../img/note.png) !important;
+		background-repeat:no-repeat !important;	
+}
+
+
+footer .ui-btn-active{
+	background:none !important;
+	background-color:#dfa243 !important;
+	text-shadow: 0 1px 1px #000;
+}
+
+.ui-btn-active{
+		background-color:#dfa243 !important;
+	
+}
+
+.ui-field-contain, fieldset.ui-field-contain {
+	padding: 5px !important;
+}
+
+.ui-br{
+	border:none !important;
+}
+
+
+
+.field{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+#foto,
+#foto-val{
+	background-position: center center;
+	width:160px;
+	height:240px;
+	margin:auto;
+	background-size:cover;
+}
+
+/*
+#ver{
+	color:#563919 !important;
+	text-shadow:1px 1px 1px #fcd799 !important;
+}
+
+#ver .titulo{
+	font-size:30px;
+	font-weight: bold;
+}
+
+#ver .descripcion{
+	font-size:22px;
+}
+
+#ver .fecha{
+	font-size:12px;
+	color:#333;
+	text-shadow:none !important;
+}
+*/
